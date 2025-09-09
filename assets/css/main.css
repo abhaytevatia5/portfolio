@@ -1936,6 +1936,10 @@ input, select, textarea {
 			margin: -4em 0 4em -4em;
 			width: auto;
 		}
+		.box.style2:hover {
+		transform: translateY(-8px) scale(1.02);   /* lift + slightly bigger */
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* stronger shadow */
+		}
 
 /* Icons */
 
