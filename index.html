@@ -26,14 +26,25 @@
 		<!-- Home -->
 			<article id="top" class="wrapper style1">
 				<div class="container">
+				<!-- Download CV button -->
+				<a href="cv.pdf" download class="download-btn top-right">
+					<span class="download-label">Download CV</span>
+					<svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#056dfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+						<polyline points="7 10 12 15 17 10"/>
+						<line x1="12" y1="15" x2="12" y2="3"/>
+					</svg>
+				</a>
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
 							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
-								<h1>Hi. I'm <strong>Jane Doe</strong>.</h1>
+								<h1>Hi. I'm <strong>Abhay Tevatia</strong>.</h1>
 							</header>
+
+
 							<p>And this is <strong>Miniport</strong>, a free, fully responsive HTML5 site template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a> &amp; released under the <a href="http://html5up.net/license">CCA license</a>.</p>
 							<a href="#work" class="button large scrolly">Learn about what I do</a>
 						</div>
@@ -85,12 +96,34 @@
 						<h2>Here’s some stuff I made recently.</h2>
 						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
 					</header>
+					<!-- 🔹 Filter Tabs -->
+					<div class="filter">
+						<input type="radio" id="all" name="filter" value="all" checked>
+						<label for="all">All</label>
+
+						<input type="radio" id="sql" name="filter" value="SQL">
+						<label for="sql">SQL</label>
+
+						<input type="radio" id="powerbi" name="filter" value="Power BI">
+						<label for="powerbi">Power BI</label>
+
+						<input type="radio" id="excel" name="filter" value="Excel">
+						<label for="excel">Excel</label>
+					</div>
+
+					
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 								<h3><a href="#">Magna feugiat</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
+								<!-- Skills Section -->
+								<div class="skills">
+									<span class="skill">SQL</span>
+									<span class="skill">Power BI</span>
+									<span class="skill">Excel</span>
+								</div>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -98,6 +131,12 @@
 								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 								<h3><a href="#">Veroeros primis</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
+								<!-- Skills Section -->
+								<div class="skills">
+									<span class="skill">SQL</span>
+									<span class="skill">Power BI</span>
+									<span class="skill">Excel</span>
+								</div>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -105,6 +144,12 @@
 								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 								<h3><a href="#">Lorem ipsum</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
+								<!-- Skills Section -->
+								<div class="skills">
+									<span class="skill">SQL</span>
+									<span class="skill">Power BI</span>
+									<span class="skill">Excel</span>
+								</div>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -112,6 +157,12 @@
 								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 								<h3><a href="#">Tempus dolore</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
+								<!-- Skills Section -->
+								<div class="skills">
+									<span class="skill">SQL</span>
+									<span class="skill">Power BI</span>
+									<span class="skill">Excel</span>
+								</div>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -119,6 +170,12 @@
 								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
 								<h3><a href="#">Feugiat aliquam</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
+								<!-- Skills Section -->
+								<div class="skills">
+									<span class="skill">SQL</span>
+									<span class="skill">Power BI</span>
+									<span class="skill">Excel</span>
+								</div>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -126,13 +183,16 @@
 								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
 								<h3><a href="#">Sed amet ornare</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
+								<!-- Skills Section -->
+								<div class="skills">
+									<span class="skill">SQL</span>
+									<span class="skill">Power BI</span>
+									<span class="skill">Excel</span>
+								</div>
+							</article>
 							</article>
 						</div>
 					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
 				</div>
 			</article>
 
@@ -209,6 +269,48 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				const radios = document.querySelectorAll('.filter input[type="radio"]');
+				const glider = document.querySelector('.glider');
 
+				function moveGlider(radio) {
+					const label = document.querySelector(`label[for="${radio.id}"]`);
+					const tabRect = label.getBoundingClientRect();
+					const tabsRect = label.parentElement.getBoundingClientRect();
+
+					// ✅ Dynamically set glider width + position
+					glider.style.width = `${tabRect.width}px`;
+					glider.style.transform = `translateX(${tabRect.left - tabsRect.left}px)`;
+				}
+
+				radios.forEach(radio => {
+					radio.addEventListener('change', function () {
+					moveGlider(this);
+
+					// ✅ Filter portfolio cards
+					const selected = this.value;
+					document.querySelectorAll('#portfolio .row > div').forEach(card => {
+						const skills = card.getAttribute('data-skill');
+						if (selected === "all" || skills.includes(selected)) {
+						card.style.display = "block";
+						} else {
+						card.style.display = "none";
+						}
+					});
+					});
+
+					// ✅ On page load, move glider to checked tab
+					if (radio.checked) moveGlider(radio);
+				});
+
+				// ✅ Also reposition glider if window resizes
+				window.addEventListener('resize', () => {
+					const checked = document.querySelector('.filter input[type="radio"]:checked');
+					if (checked) moveGlider(checked);
+				});
+			</script>
+			
+			</body>
+			</html>
 	</body>
 </html>
