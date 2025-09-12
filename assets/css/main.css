@@ -1997,8 +1997,8 @@ input, select, textarea {
 /* Download CV button — top-right inside #top */
 .download-btn.top-right {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 1rem;
+  right: 1rem;
   z-index: 9999;                 /* bring to front so nothing overlaps it */
   display: inline-flex;
   align-items: center;
