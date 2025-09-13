@@ -1715,6 +1715,8 @@ input, select, textarea {
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
+		transform: scale(0.8); /* scale to 80% of original size */
+		transform-origin: left; /* keeps it shrinking from the center */
 	}
 
 		input[type="button"]:hover,
