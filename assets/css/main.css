@@ -73,6 +73,29 @@ input, select, textarea {
 	appearance: none;
 }
 
+.microsoft {
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #333333;
+}
+
+.microsoft strong {
+  color: #1e88e5;  /* Abhay Tevatia highlighted in blue */
+  font-weight: 600;     
+}
+
+.microsoft-desc {
+  font-family: 'Poppins', 'Montserrat', sans-serif; /* clean & minimal */
+  color: #555555;               /* light black/gray */
+  margin-top: 0.3em;
+  line-height: 1.5;             /* improves readability */
+  font-weight: 100;     
+  
+}
+
+
+
+
 /* Basic */
 
 	html {
