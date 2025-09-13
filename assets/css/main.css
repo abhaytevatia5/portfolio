@@ -1716,7 +1716,7 @@ input, select, textarea {
 		font-size: 1.1em;
 		max-width: 24em;
 		transform: scale(0.8); /* scale to 80% of original size */
-		transform-origin: relative; /* keeps it shrinking from the center */
+		transform-origin: center; /* keeps it shrinking from the center */
 	}
 
 		input[type="button"]:hover,
