@@ -86,12 +86,15 @@ input, select, textarea {
 
 .microsoft-desc {
   font-family: 'Poppins', 'Montserrat', sans-serif; /* clean & minimal */
-  color: #555555;               /* light black/gray */
+  color: #555555;
   margin-top: 0.3em;
-  line-height: 1.5;             /* improves readability */
-  font-weight: 100;     
-  
+  line-height: 1.5;
+  font-weight: 300;     /* thin but readable */
+  font-size: 0.9rem;    /* smaller than default (1rem ≈ 16px) */
 }
+
+
+
 
 
 
@@ -1699,8 +1702,8 @@ input, select, textarea {
 		-ms-transition: background-color .2s ease-in-out;
 		transition: background-color .2s ease-in-out;
 		-webkit-appearance: none;
-		position: relative;
 		display: inline-block;
+		position: relative;
 		color: #fff !important;
 		text-decoration: none;
 		font-weight: 700;
@@ -2045,8 +2048,15 @@ label:last-child span {
 }
 
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
 
-
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
 /* make #top container a positioning context for the absolute button */
@@ -2678,17 +2688,38 @@ label:last-child span {
 
 	}
 
-/* Section backgrounds */
-#about {
-  background-color: #ffffff;
+/* Social Buttons */
+.socialbtns,
+.socialbtns ul,
+.socialbtns li {
+  margin: 0;
+  padding: 5px;
+  padding: 1em;
+  
+  
 }
 
-#work {
-  background-color: #ffffff;
+.socialbtns li {
+  list-style: none;
+  display: inline-block;
 }
 
-#contact {
-  background-color: #ffffff;
+.socialbtns a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px; /* centers the FA icon vertically */
+  font-size: 18px;   /* icon size */
+  transition: all 0.3s ease;
 }
 
-
+.socialbtns a:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
