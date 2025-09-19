@@ -1719,7 +1719,9 @@ input, select, textarea {
 		font-size: 1.1em;
 		max-width: 25em;
 		transform: scale(0.8); /* scale to 80% of original size */
-		transform-origin: center; /* keeps it shrinking from the center */
+		transform-origin: left; /* keeps it shrinking from the center */
+	    margin-left: 0; /* ensures no margin pushing it */
+
 	}
 
 	.button.large.scrolly {
@@ -1730,9 +1732,16 @@ input, select, textarea {
   .portfolio-btn {
   display: flex;          /* makes it flex container */
   justify-content: flex-start; /* pushes button to the left */
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-left: 0;
 }
-
+/* For mobile screens (centered) */
+@media (max-width: 768px) {   /* adjust breakpoint if needed */
+  .button {
+    display: block;
+    margin: 0 auto;  /* center horizontally */
+  }
+}
 
 
 
@@ -2565,7 +2574,7 @@ label:last-child span {
 /* Social Buttons */
 .socialbtns ul {
   margin: 0;
-  padding: 0 0 0 111px;
+  padding: 0;
   list-style: none;
 
   display: flex;
@@ -2596,4 +2605,10 @@ label:last-child span {
   color: #fff;
   background-color: #000;
   border-color: #000;
+}
+/* On Mobile: Center align */
+@media (max-width: 768px) {
+  .socialbtns ul {
+    justify-content: center;
+  }
 }
