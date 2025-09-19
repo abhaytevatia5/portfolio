@@ -2609,6 +2609,6 @@ label:last-child span {
 /* On Mobile: Center align */
 @media (max-width: 768px) {
   .socialbtns ul {
-    justify-content: center;
+    justify-content: left;
   }
 }
