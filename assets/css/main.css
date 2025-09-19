@@ -413,6 +413,7 @@ input, select, textarea {
 
 		.row > .col-8 {
 			width: 66.66667%;
+			
 		}
 
 		.row > .off-8 {
@@ -1717,23 +1718,16 @@ input, select, textarea {
 		background-color: #42a5f5;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
-		max-width: 25em;
-		transform: scale(0.8); /* scale to 80% of original size */
+		transform: scale(0.7); /* scale to 80% of original size */
 		transform-origin: left; /* keeps it shrinking from the center */
-	    margin-left: 0; /* ensures no margin pushing it */
 
 	}
 
 	.button.large.scrolly {
-	display: inline-block;
 	margin-top: 20px;
-	margin-left: 0;    /* flush to left */
 }
   .portfolio-btn {
-  display: flex;          /* makes it flex container */
-  justify-content: flex-start; /* pushes button to the left */
   margin-top: 25px;
-  margin-left: 0;
 }
 /* For mobile screens (centered) */
 @media (max-width: 768px) {   /* adjust breakpoint if needed */
@@ -2576,7 +2570,6 @@ label:last-child span {
   margin: 0;
   padding: 0;
   list-style: none;
-
   display: flex;
   justify-content: left; /* center horizontally */
   gap: 12px;               /* space between icons */
