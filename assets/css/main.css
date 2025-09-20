@@ -77,11 +77,13 @@ input, select, textarea {
   font-size: 2.2rem;
   font-weight: 300;
   color: #333333;
+  text-align: center;
 }
 
 .microsoft strong {
   color: #1e88e5;  /* Abhay Tevatia highlighted in blue */
-  font-weight: 600;     
+  font-weight: 600;  
+  text-align: center;   
 }
 
 .microsoft-desc {
@@ -91,6 +93,7 @@ input, select, textarea {
   line-height: 1.5;
   font-weight: 300;     /* thin but readable */
   font-size: 0.9rem;    /* smaller than default (1rem ≈ 16px) */
+  text-align: center;
 }
 
 
@@ -1719,7 +1722,10 @@ input, select, textarea {
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		transform: scale(0.7); /* scale to 80% of original size */
-		transform-origin: left; /* keeps it shrinking from the center */
+		transform-origin: center; /* keeps it shrinking from the center */
+		text-align: center;
+		display: inline-block; /* already set */
+        margin: 0 auto; 
 
 	}
 
@@ -1727,13 +1733,18 @@ input, select, textarea {
 	margin-top: 20px;
 }
   .portfolio-btn {
-  margin-top: 25px;
+  	margin-top: 25px;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    margin-top: 20px; 
+
 }
 /* For mobile screens (centered) */
 @media (max-width: 768px) {   /* adjust breakpoint if needed */
   .button {
     display: block;
     margin: 0 auto;  /* center horizontally */
+    justify-content: center;
   }
 }
 
@@ -2571,7 +2582,7 @@ label:last-child span {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: left; /* center horizontally */
+  justify-content: center; /* center horizontally */
   gap: 12px;               /* space between icons */
 }
 
@@ -2602,6 +2613,6 @@ label:last-child span {
 /* On Mobile: Center align */
 @media (max-width: 768px) {
   .socialbtns ul {
-    justify-content: left;
+    justify-content: center;
   }
 }
